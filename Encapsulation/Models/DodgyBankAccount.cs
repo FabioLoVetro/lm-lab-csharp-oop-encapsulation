@@ -3,7 +3,6 @@ namespace Encapsulation.Models
 {
     public class DodgyBankAccount
     {
-
         public string AccountNumber;
         public int AccountBalance;
         public int RewardAmount = 50;
