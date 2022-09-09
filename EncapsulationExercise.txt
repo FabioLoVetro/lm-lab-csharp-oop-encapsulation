@@ -1,0 +1,16 @@
+1)
+the program show how the class DodgyBankAccount and SecureBankAccount works and put in evidance the difference between them.
+
+2)
+In the class DodgyBankAccount the attributes are defined as public, is not good to have access directly to the class attributes.
+the attribute AccountNumber is not defined as read only, so it is possible have a misused.
+the attribute RewardAmount is not defined properly as a magic number.
+in the class SecureBankAccount the attributes are defined as private so are well-encapsulated and
+the attribute _accountNumber is defined as read only.
+
+
+3)
+the method DepositAmount(int amount) have a call to another method! AddReward(). Single Responsibility Principle not respected.
+the name for the method GetAccountBalanceDetails is not completely clear.
+the name of the method DisplayAccountBalanceDetails is better for clearer abstraction.
+
