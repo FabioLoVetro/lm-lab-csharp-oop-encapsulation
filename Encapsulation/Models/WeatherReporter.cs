@@ -5,17 +5,17 @@ namespace Encapsulation.Models
     {
         private string _location;
         private double _temperature;
+        private double NEW_TEMPERATURE;
 
         public WeatherReporter(string location, double temperature)
         {
             _location = location;
             _temperature = temperature;
+            NEW_TEMPERATURE = (9.0 / 5.0) * _temperature + 32;
         }
 
         public string PrintClimate()
         {
-            // magic numbers 9.0    5.0     32
-            double newTemp = (9.0 / 5.0) * _temperature + 32;
             return $"I am in {_location} and it is {CheckLocation()}. {CheckTemperature()}. The temperature in Fahrenheit is {newTemp}.";
         }
 
